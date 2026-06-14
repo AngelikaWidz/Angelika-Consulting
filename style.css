@@ -2,13 +2,13 @@
    TOKENS
 ───────────────────────────────────────────────── */
 :root {
-  --black:       #0E0E0E;
-  --off-white:   #F0EDE8;
-  --gold:        #C9A84C;
-  --gold-muted:  #a8882e;
+  --white:       #eaeaea;
+  --dark-grey:   #272727;
+  --green:        #b0d48a;
+  --green-muted: #8fc96d;
   --grey-mid:    #6B6B6B;
   --grey-light:  #D6D3CE;
-  --grey-rule:   #2A2A2A;
+  --grey-rule:   #d0d0d0;
 
   --font-display: 'Playfair Display', Georgia, serif;
   --font-body:    'Inter', system-ui, sans-serif;
@@ -19,7 +19,7 @@
   --space-lg:  4rem;
   --space-xl:  7rem;
 
-  --radius:    4px;
+  --radius:    15px;
   --max-width: 1100px;
 }
 
@@ -37,8 +37,8 @@ html {
 }
 
 body {
-  background-color: var(--black);
-  color: var(--off-white);
+  background-color: var(--white);
+  color: var(--dark-grey);
   font-family: var(--font-body);
   font-size: 1.0625rem;
   line-height: 1.7;
@@ -98,11 +98,13 @@ h1, h2, h3 {
 h2 {
   font-size: clamp(1.75rem, 3.5vw, 2.5rem);
   margin-bottom: var(--space-md);
+  color: var(--white);
 }
 
 h3 {
   font-size: 1.125rem;
   margin-bottom: 0.5rem;
+  
 }
 
 p {
@@ -121,7 +123,7 @@ p:last-child {
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--green);
   margin-bottom: var(--space-sm);
 }
 
@@ -129,7 +131,7 @@ p:last-child {
   position: relative;
   display: inline-block;
   font-style: italic;
-  color: var(--off-white);
+  color: var(--dark-grey);
 }
 
 .accent::after {
@@ -139,7 +141,7 @@ p:last-child {
   left: 0;
   right: 0;
   height: 3px;
-  background: var(--gold);
+  background: var(--green);
 }
 
 /* ─────────────────────────────────────────────────
@@ -158,13 +160,13 @@ p:last-child {
 }
 
 .btn--primary {
-  background: var(--gold);
-  color: var(--black);
+  background: var(--green);
+  color: var(--white);
   padding: 0.875rem 2rem;
 }
 
 .btn--primary:hover {
-  background: var(--gold-muted);
+  background: var(--green-muted);
   transform: translateY(-1px);
 }
 
@@ -207,7 +209,7 @@ p:last-child {
   font-weight: 900;
   line-height: 1.05;
   margin-bottom: var(--space-md);
-  color: var(--off-white);
+  color: var(--dark-grey);
 }
 
 .hero__sub {
@@ -255,9 +257,9 @@ p:last-child {
 .proof-bar__quotes span {
   font-style: italic;
   font-size: 0.9375rem;
-  color: var(--off-white);
-  background: #1A1A1A;
-  border: 1px solid #333;
+  color: var(--dark-grey);
+  background: #eaeaea;
+  border: 1px solid #b0d48a;
   padding: 0.3rem 0.75rem;
   border-radius: 2rem;
 }
@@ -266,7 +268,7 @@ p:last-child {
    PROBLEM SECTION
 ───────────────────────────────────────────────── */
 .problem__copy h2 {
-  color: var(--off-white);
+  color: var(--dark-grey);
 }
 
 .symptom-list {
@@ -286,7 +288,7 @@ p:last-child {
 
 .symptom-list li::before {
   content: '—';
-  color: var(--gold);
+  color: var(--green);
   flex-shrink: 0;
   margin-top: 0.05em;
 }
@@ -305,12 +307,12 @@ p:last-child {
 }
 
 .solution h2 {
-  color: var(--off-white);
+  color: var(--green);
 }
 
 .solution__lead {
   font-size: 1.0625rem;
-  color: var(--grey-mid);
+  color: var(--white);
 }
 
 /* ─────────────────────────────────────────────────
@@ -324,7 +326,7 @@ p:last-child {
 }
 
 .deliverable-card {
-  background: #111;
+  background: #d7d7d7;
   border: 1px solid var(--grey-rule);
   border-radius: var(--radius);
   padding: 1.75rem;
@@ -332,21 +334,21 @@ p:last-child {
 }
 
 .deliverable-card:hover {
-  border-color: var(--gold);
+  border-color: var(--green);
 }
 
-.deliverable-card--accent {
-  border-color: var(--gold);
+/* .deliverable-card--accent {
+  border-color: var(--green);
   background: #141209;
-}
+} */
 
 .deliverable-card__icon {
-  color: var(--gold);
+  color: var(--green);
   margin-bottom: 1rem;
 }
 
 .deliverable-card h3 {
-  color: var(--off-white);
+  color: var(--dark-grey);
   font-size: 1rem;
   margin-bottom: 0.5rem;
 }
@@ -365,7 +367,7 @@ p:last-child {
 }
 
 .how-it-works h2 {
-  color: var(--off-white);
+  color: var(--white);
   margin-bottom: var(--space-lg);
 }
 
@@ -400,7 +402,7 @@ p:last-child {
 }
 
 .step h3 {
-  color: var(--off-white);
+  color: var(--green);
   font-family: var(--font-body);
   font-weight: 600;
   margin-bottom: 0.35rem;
@@ -409,13 +411,14 @@ p:last-child {
 .step p {
   margin: 0;
   font-size: 0.9375rem;
+  color: var(--grey-light);
 }
 
 /* ─────────────────────────────────────────────────
    FOR WHO
 ───────────────────────────────────────────────── */
 .for-who__copy h2 {
-  color: var(--off-white);
+  color: var(--dark-grey);
 }
 
 .for-who__not-label {
@@ -452,7 +455,7 @@ p:last-child {
   padding-block: var(--space-xl);
   border-top: 1px solid var(--grey-rule);
   border-bottom: 1px solid var(--grey-rule);
-  background: var(--black);
+  background: var(--white);
 }
 
 .belief__quote {
@@ -460,7 +463,7 @@ p:last-child {
   font-size: clamp(1.5rem, 3.5vw, 2.25rem);
   font-weight: 700;
   font-style: normal;
-  color: var(--off-white);
+  color: var(--dark-grey);
   line-height: 1.35;
   max-width: 720px;
   margin-inline: auto;
@@ -469,7 +472,7 @@ p:last-child {
 }
 
 .belief__quote em {
-  color: var(--gold);
+  color: var(--green);
   font-style: italic;
 }
 
@@ -487,7 +490,7 @@ p:last-child {
 }
 
 .cta-section h2 {
-  color: var(--off-white);
+  color: var(--white);
 }
 
 .cta-section__detail {
@@ -495,6 +498,7 @@ p:last-child {
   max-width: 480px;
   margin-inline: auto;
   margin-bottom: var(--space-md);
+  color: var(--grey-light);
 }
 
 .cta-section__price {
@@ -509,13 +513,13 @@ p:last-child {
   font-family: var(--font-display);
   font-size: 3rem;
   font-weight: 900;
-  color: var(--off-white);
+  color: var(--green);
   line-height: 1;
 }
 
 .price-note {
   font-size: 0.875rem;
-  color: var(--grey-mid);
+  color: var(--grey-light);
 }
 
 .cta-section__reassurance {
@@ -536,7 +540,7 @@ p:last-child {
 }
 
 .faq h2 {
-  color: var(--off-white);
+  color: var(--dark-grey);
   margin-bottom: var(--space-lg);
 }
 
@@ -554,7 +558,7 @@ p:last-child {
   width: 100%;
   background: none;
   border: none;
-  color: var(--off-white);
+  color: var(--dark-grey);
   font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 500;
@@ -569,7 +573,7 @@ p:last-child {
 }
 
 .faq__question:hover {
-  color: var(--gold);
+  color: var(--green);
 }
 
 .faq__icon {
@@ -577,7 +581,7 @@ p:last-child {
   width: 18px;
   height: 18px;
   position: relative;
-  color: var(--gold);
+  color: var(--green);
 }
 
 .faq__icon::before,
@@ -645,7 +649,7 @@ p:last-child {
   font-family: var(--font-display);
   font-size: 1.125rem;
   font-weight: 700;
-  color: var(--off-white);
+  color: var(--dark-grey);
   margin: 0;
 }
 
@@ -668,7 +672,7 @@ p:last-child {
 }
 
 .footer__links a:hover {
-  color: var(--off-white);
+  color: var(--dark-grey);
 }
 
 /* ─────────────────────────────────────────────────
@@ -733,7 +737,7 @@ p:last-child {
    FOCUS STYLES
 ───────────────────────────────────────────────── */
 :focus-visible {
-  outline: 2px solid var(--gold);
+  outline: 2px solid var(--green);
   outline-offset: 3px;
   border-radius: var(--radius);
 }
