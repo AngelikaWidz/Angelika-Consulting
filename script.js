@@ -18,7 +18,7 @@ function tick() {
 
     if (char === current.length) {
       deleting = true;
-      setTimeout(tick, 1800);
+      setTimeout(tick, 2800);
       return;
     }
   } else {
@@ -30,7 +30,7 @@ function tick() {
     }
   }
 
-  setTimeout(tick, deleting ? 30 : 60);
+  setTimeout(tick, deleting ? 30 : 40);
 }
 
 tick();
