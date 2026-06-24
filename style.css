@@ -235,48 +235,27 @@ p:last-child {
   color: var(--grey-mid);
 }
 
-/* ─────────────────────────────────────────────────
-   PROOF BAR
-───────────────────────────────────────────────── */
-.proof-bar {
-  padding-block: var(--space-md);
-  background: linear-gradient(0deg, #EAEAEA 0%, #daebd0 50%, #EAEAEA 100%);
-  backdrop-filter: blur(11px);
-  -webkit-backdrop-filter: blur(11px);
-  /* border: 1px solid rgba(255, 255, 255, 0.2); */
-}
+/* typing line */
 
-
-.proof-bar__inner {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: var(--space-sm);
-}
-
-.proof-bar__label {
-  color: var(--grey-mid);
-  font-size: 0.875rem;
-  margin: 0;
-  white-space: nowrap;
-}
-
-.proof-bar__quotes {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-sm);
-}
-
-.proof-bar__quotes span {
-  font-style: italic;
-  font-size: 0.9375rem;
+.pain-bar {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
   color: var(--dark-grey);
-  background: #eaeaea;
-  border: 1px solid #b0d48a;
-  padding: 0.3rem 0.75rem;
-  border-radius: 2rem;
+  margin: 0;
+}
+/* .pain-headline {
+  color: var(--dark-grey);
+  text-align: center;
+} */
+.typing-line {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 700;
+  color: var(--dark-grey);
+  text-align: center;
 }
 
+.cursor {
+  color: #B0D48A;
+}
 /* ─────────────────────────────────────────────────
    PROBLEM SECTION
 ───────────────────────────────────────────────── */
