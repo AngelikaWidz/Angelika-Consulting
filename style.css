@@ -360,7 +360,16 @@ p:last-child {
   font-size: clamp(1.5rem, 3vw, 2.25rem);
   color: var(--dark-grey);
   margin: 0;
-  padding: 10px 0;
+    max-height: 10vh;
+}
+@media screen and (max-width: 600px) {
+.pain-bar {
+  padding: 5% 10%;
+    max-height: 10vh;
+  display: flex;
+  align-items: center;
+}
+  
 }
 /* .pain-headline {
   color: var(--dark-grey);
