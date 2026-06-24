@@ -4,6 +4,7 @@
 :root {
   --white:       #eaeaea;
   --dark-grey:   #272727;
+  /* --green:        #4E5E3D; */
   --green:        #b0d48a;
   --green-muted: #8fc96d;
   --grey-mid:    #6B6B6B;
@@ -161,8 +162,10 @@ p:last-child {
 
 .btn--primary {
   background: var(--green);
-  color: var(--white);
+  color: #23412A;
   padding: 0.875rem 2rem;
+  font-weight: 700;
+
 }
 
 .btn--primary:hover {
