@@ -1,7 +1,7 @@
 const phrases = [
   "People visit your website but don't get in touch.",
   "You're getting attention but no action.",
-  "People compare you instead of choosing you."
+  "People compare you on price instead of value."
 ];
 
 let phrase = 0;
