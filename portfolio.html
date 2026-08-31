@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="portfolio.css" />
+
 </head>
 <body>
   <a class="skip-link" href="#case-study">Skip to case study</a>
@@ -42,6 +43,14 @@
         </dl>
       </aside>
     </section>
+
+    <div class="full-width-bar">
+      <div class="full-width-bar__inner">
+        <span>Clearer structure</span>
+        <span>More confidence</span>
+        <span>Simpler action</span>
+      </div>
+    </div>
 
     <section class="content-section">
       <p class="eyebrow">Business situation</p>
@@ -91,27 +100,111 @@
       </div>
     </section>
 
-    <section class="content-section split-section">
-      <div>
-        <p class="eyebrow">So, what was getting in the way?</p>
-        <div class="finding-list">
-          <article class="finding is-active" tabindex="0"><h2>Important information had no hierarchy</h2><p>Valuable selling points were present, but they were given the same visual weight as secondary details.</p></article>
-          <article class="finding" tabindex="0"><h2>The website described instead of guiding</h2><p>Visitors received information without help knowing what to look at next.</p></article>
-          <article class="finding" tabindex="0"><h2>The next step required too much interpretation</h2><p>The enquiry route asked visitors to make sense of the offer by themselves.</p></article>
-        </div>
-      </div>
-      <div class="visual visual--square visual--hierarchy" role="img" aria-label="Typography blocks reorganising into a clear hierarchy">
-        <span class="hierarchy__one">A clear reason to care</span><span class="hierarchy__two">The information that builds confidence</span><span class="hierarchy__three">The detail people need later</span>
-      </div>
-    </section>
+
+<section class="content-section tabbed-section">
+  <p class="eyebrow">So, what was getting in the way?</p>
+
+  <div class="image-tabs" data-image-tabs>
+    <div class="image-tabs__buttons" role="tablist" aria-label="Website findings">
+      <button
+        class="image-tab is-active"
+        id="image-tab-1"
+        type="button"
+        role="tab"
+        aria-selected="true"
+        aria-controls="tab-image-1"
+      >
+        <strong>Important information had no hierarchy</strong>
+
+        <span>
+          Valuable selling points were present, but they were given the same
+          visual weight as secondary details.
+        </span>
+      </button>
+
+      <button
+        class="image-tab"
+        id="image-tab-2"
+        type="button"
+        role="tab"
+        aria-selected="false"
+        aria-controls="tab-image-2"
+        tabindex="-1"
+      >
+        <strong>The website described instead of guiding</strong>
+
+        <span>
+          Visitors received information without help knowing what to look at
+          next.
+        </span>
+      </button>
+
+      <button
+        class="image-tab"
+        id="image-tab-3"
+        type="button"
+        role="tab"
+        aria-selected="false"
+        aria-controls="tab-image-3"
+        tabindex="-1"
+      >
+        <strong>The next step required too much interpretation</strong>
+
+        <span>
+          The enquiry route asked visitors to make sense of the offer
+          themselves.
+        </span>
+      </button>
+    </div>
+
+    <div class="image-tabs__display">
+      <figure
+        class="tab-image-panel is-active"
+        id="tab-image-1"
+        role="tabpanel"
+        aria-labelledby="image-tab-1"
+      >
+        <img
+          src="image-one.jpg"
+          alt="Description of the first project image"
+        />
+      </figure>
+
+      <figure
+        class="tab-image-panel"
+        id="tab-image-2"
+        role="tabpanel"
+        aria-labelledby="image-tab-2"
+        aria-hidden="true"
+      >
+        <img
+          src="image-two.jpg"
+          alt="Description of the second project image"
+        />
+      </figure>
+
+      <figure
+        class="tab-image-panel"
+        id="tab-image-3"
+        role="tabpanel"
+        aria-labelledby="image-tab-3"
+        aria-hidden="true"
+      >
+        <img
+          src="image-three.jpg"
+          alt="Description of the third project image"
+        />
+      </figure>
+    </div>
+  </div>
+</section>
 
     <section class="content-section split-section split-section--insight">
       <div>
         <p class="eyebrow">The central insight</p>
         <p class="insight-copy">The problem wasn't that visitors couldn't find information. It was that the website made them decide what was important before they were ready to decide anything else.</p>
       </div>
-      <div class="visual visual--square visual--quote" role="img" aria-label="The words clarity, confidence and action connected in sequence">
-        <p><span>Clarity</span><span>Confidence</span><span>Action</span></p>
+      <div class="visual visual--square visual--quote" role="img"> <img src="..." alt=""></div>
       </div>
     </section>
 
@@ -128,19 +221,104 @@
       </div>
     </section>
 
-    <section class="content-section split-section result-section">
-      <div>
-        <p class="eyebrow">The improved experience</p>
-        <div class="finding-list finding-list--static">
-          <article class="finding is-active"><h2>Important information now has hierarchy</h2><p>Core selling points lead; supporting detail appears exactly when it becomes useful.</p></article>
-          <article class="finding"><h2>The website guides instead of describing</h2></article>
-          <article class="finding"><h2>The next step requires less interpretation</h2></article>
-        </div>
-      </div>
-      <div class="visual visual--square visual--result" role="img" aria-label="Simplified redesigned webpage preview">
-        <div class="result-window"><span class="result-kicker"></span><span class="result-title"></span><span class="result-copy"></span><span class="result-button"></span><span class="result-panel"></span></div>
-      </div>
-    </section>
+
+    <section class="content-section tabbed-section">
+  <p class="eyebrow">The improved experience</p>
+
+  <div class="image-tabs" data-image-tabs>
+    <div class="image-tabs__buttons" role="tablist" aria-label="Website findings">
+      <button
+        class="image-tab is-active"
+        id="image-tab-1"
+        type="button"
+        role="tab"
+        aria-selected="true"
+        aria-controls="tab-image-1"
+      >
+        <strong> We led with value </strong>
+
+        <span>
+          Valuable selling points were present, but they were given the same
+          visual weight as secondary details.
+        </span>
+      </button>
+
+      <button
+        class="image-tab"
+        id="image-tab-2"
+        type="button"
+        role="tab"
+        aria-selected="false"
+        aria-controls="tab-image-2"
+        tabindex="-1"
+      >
+        <strong>The website described instead of guiding</strong>
+
+        <span>
+          Visitors received information without help knowing what to look at
+          next.
+        </span>
+      </button>
+
+      <button
+        class="image-tab"
+        id="image-tab-3"
+        type="button"
+        role="tab"
+        aria-selected="false"
+        aria-controls="tab-image-3"
+        tabindex="-1"
+      >
+        <strong>The next step required too much interpretation</strong>
+
+        <span>
+          The enquiry route asked visitors to make sense of the offer
+          themselves.
+        </span>
+      </button>
+    </div>
+
+    <div class="image-tabs__display">
+      <figure
+        class="tab-image-panel is-active"
+        id="tab-image-1"
+        role="tabpanel"
+        aria-labelledby="image-tab-1"
+      >
+        <img
+          src="image-one.jpg"
+          alt="Description of the first project image"
+        />
+      </figure>
+
+      <figure
+        class="tab-image-panel"
+        id="tab-image-2"
+        role="tabpanel"
+        aria-labelledby="image-tab-2"
+        aria-hidden="true"
+      >
+        <img
+          src="image-two.jpg"
+          alt="Description of the second project image"
+        />
+      </figure>
+
+      <figure
+        class="tab-image-panel"
+        id="tab-image-3"
+        role="tabpanel"
+        aria-labelledby="image-tab-3"
+        aria-hidden="true"
+      >
+        <img
+          src="image-three.jpg"
+          alt="Description of the third project image"
+        />
+      </figure>
+    </div>
+  </div>
+</section>
 
     <section class="closing-cta">
       <p class="eyebrow">Your website should make choosing easier</p>
@@ -155,5 +333,6 @@
     <nav aria-label="Footer navigation"><a href="privacy policy.html">Privacy</a><a href="t&c.html">Terms</a><a href="mailto:angelikawidz@outlook.com">Contact</a></nav>
   </footer>
   <script src="portfolio.js"></script>
+
 </body>
 </html>
